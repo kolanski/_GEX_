@@ -1,0 +1,14 @@
+﻿doctype
+html
+	head
+		title= "Node chat"
+		meta(charset='utf-8')
+		script(src='/chat.js')
+		script(src='/socket.io/socket.io.js')
+	body
+		a(class='Chat')
+			#content(style="width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;")
+			form#form(action='', onsubmit='return false')
+				input#field(style="width:350px;")
+				input#send(type='submit', value='Послать')
+			button#btn(action='',onclick='return false') Awesome

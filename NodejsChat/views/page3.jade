@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title CodePen - A Pen by  kolanski
+  body
+    // DataTables CSS
+    link(rel='stylesheet', type='text/css', href='http://cdn.datatables.net/1.10.5/css/jquery.dataTables.css')
+    // jQuery
+    script(type='text/javascript', charset='utf8', src='http://code.jquery.com/jquery-1.10.2.min.js')
+    // DataTables
+    script(type='text/javascript', charset='utf8', src='http://cdn.datatables.net/1.10.5/js/jquery.dataTables.js')
+    button(onclick='buttnclick()') loadme
+    table#table_id.display
+      thead
+        tr
+          th Player1
+          th Player2
+          th Bookmaker1
+          th Bookmaker2
+          th NumGame
+          th NumSet
+          th Score
+          th ScoreGame
+          th Coefficent1
+          th Coefficent2
+    script(src='js/index2.js')
+    script(src='/socket.io/socket.io.js')

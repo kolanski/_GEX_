@@ -1,0 +1,129 @@
+﻿/*CREATE TABLE `arbitrage` (
+  `Player1` varchar(140) NOT NULL,
+  `Player2` varchar(140) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `bet365` (
+  `Player1` varchar(70) NOT NULL,
+  `Player2` varchar(70) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL,
+  `NumSet` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `betcity` (
+  `Player1` varchar(70) NOT NULL,
+  `Player2` varchar(70) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL,
+  `NumSet` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `fonbet` (
+  `Player1` varchar(70) NOT NULL,
+  `Player2` varchar(70) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL,
+  `NumSet` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `internetbet` (
+  `Player1` varchar(70) DEFAULT NULL,
+  `Player2` varchar(70) DEFAULT NULL,
+  `Coefficent1` double DEFAULT NULL,
+  `Coefficent2` double DEFAULT NULL,
+  `Bookmaker1` varchar(45) DEFAULT NULL,
+  `Bookmaker2` varchar(45) DEFAULT NULL,
+  `NumGame` varchar(45) DEFAULT NULL,
+  `Score` varchar(45) DEFAULT NULL,
+  `ScoreGame` varchar(45) DEFAULT NULL,
+  `NumSet` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `marathon` (
+  `Player1` varchar(70) NOT NULL,
+  `Player2` varchar(70) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL,
+  `NumSet` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `olimp` (
+  `Player1` varchar(70) NOT NULL,
+  `Player2` varchar(70) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL,
+  `NumSet` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `parimatch` (
+  `Player1` varchar(70) NOT NULL,
+  `Player2` varchar(70) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL,
+  `NumSet` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `unibet` (
+  `Player1` varchar(70) NOT NULL,
+  `Player2` varchar(70) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL,
+  `NumSet` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `williams` (
+  `Player1` varchar(70) NOT NULL,
+  `Player2` varchar(70) NOT NULL,
+  `Coefficent1` double NOT NULL,
+  `Coefficent2` double NOT NULL,
+  `Bookmaker1` varchar(45) NOT NULL,
+  `Bookmaker2` varchar(45) NOT NULL,
+  `NumGame` varchar(45) NOT NULL,
+  `Score` varchar(45) NOT NULL,
+  `ScoreGame` varchar(45) NOT NULL,
+  `NumSet` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+*/

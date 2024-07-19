@@ -1,0 +1,12 @@
+﻿String.prototype.distance = function (c) {
+    var a; a = this; var h, b, d, k, e, g, f, l, n, m, p; a.length > c.length && (c = [c, a], a = c[0], c = c[1]); k = ~~Math.max(0, c.length / 2 - 1); e = []; g = []; b = n = 0; for (p = a.length; n < p; b = ++n) for (h = a[b], l = Math.max(0, b - k), f = Math.min(b + k + 1, c.length), d = m = l; l <= f?m < f:m > f; d = l <= f?++m:--m) if (null == g[d] && h === c[d]) { e[b] = h; g[d] = c[d]; break } e = e.join(""); g = g.join(""); if (d = e.length) {
+        b = f = k = 0; for (l = e.length; f < l; b = ++f) h = e[b], h !== g[b] && k++; b = g = e = 0; for (f = a.length; g < f; b = ++g) if (h = a[b], h === c[b]) e++; else break; a = (d / a.length +
+d / c.length + (d - ~~(k / 2)) / d) / 3; a += 0.1 * Math.min(e, 4) * (1 - a)
+    } else a = 0; return a
+};
+function Test()
+{
+    var b1 = [{"Pl1":" Elias G. ","Pl2":"Carballes Baena R"},{"Pl1":"Chazal M ","Pl2":"Novak D"},{"Pl1":"Hemery C. ","Pl2":"Hanescu V. "},{"Pl1":"Hilaire J ","Pl2":"Guez D. "},{"Pl1":"Estevez M ","Pl2":"Maresca S"},{"Pl1":"Roca Batalla O "," Pl2 ":" Giner M "},{" Pl1 ":" Pla Malfeito J "," Pl2 ":" Ponselet V "},{" Pl1 ":" Sandgren T "," Pl2 ":" Spencer W "},{" Pl1 ":" Buchanan Ch "," Pl2 ":" Bangoura S "},{" Pl1 ":" Vukic A "," Pl2 ":" Dancevic F. "},{"Pl1":"Ruppli A ","Pl2":"Bonadio R"},{"Pl1":"Altmaier D ","Pl2":"Leonardi F"},{"Pl1":"Krawietz/Marterer ","Pl2":"Reuter/Robert S"},{"Pl1":"Nys/Veger ","Pl2":"Martin An./Zelenay I"},{"Pl1":"Ameal/Cuevas M ","Pl2":"Coria/Hidalgo G A"},{"Pl1":"O'Hare/Salisbury ","Pl2":"Evans/Oakley"},{"Pl1":"Haas B ","Pl2":"Golubic V"},{"Pl1":"Zeballos N ","Pl2":"Lu Jiaxi"},{"Pl1":"Buayam K ","Pl2":"Le Roux M"},{"Pl1":"Siegemund L. ","Pl2":"Khromscheva I"},{"Pl1":"Dominguez L. L.","Pl2":"Foretz S"},{"Pl1":"Herdzelas D ","Pl2":"Minnen G"},{"Pl1":"Bua/Garcia-Perez ","Pl2":"Pereira T/Pigossi"}]
+    var b2 = ["Chazal M.", "Chazal M.", "Hemery C.", "Elias G.", "Samper-Montana J.", "Hilaire J.", "Krawietz K./Marterer M.", "Krawietz K./Marterer M.", "Nys H./Veger F.", "Robert Q.", "Robert Q.", "Esteves M.", "Merino А./Negritu C.", "Harris B./Kapric D.", "Roca Batalla O.", "Buchanan C.", "Khromacheva I.", "Khromacheva I.", "Haas B."];
+    //for (){ }
+}

@@ -1,0 +1,175 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    |   
+    title CodePen - Responsive demo
+    |   
+    link(rel='stylesheet prefetch', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css')
+    link(rel='stylesheet prefetch', href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/4579/bootstrap-table.css')
+    |     
+    link(rel='stylesheet', href='css/style.css', media='screen', type='text/css')
+  body
+    body
+      #wrapper
+        nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-hamburger-delicious')
+              span.sr-only Toggle navigation
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              span.icon-bar
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              span.icon-bar
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              span.icon-bar
+            | &#x9;&#x9;&#x9;&#x9;
+            a.navbar-brand Project Gamb
+          | &#x9;&#x9;&#x9;
+          .collapse.navbar-collapse.navbar-hamburger-delicious
+            ul.nav.navbar-nav.side-nav.fadeInLeft
+              li.toggle-nav.visible-lg.visible-md.visible-sm
+                a
+                  i.fa.fa-lg.fa-arrow-left
+                  | Hide Menu
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.dashboard
+                a(href='#')
+                  i.fa.fa-lg.fa-dashboard
+                  | Dashboard
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.active.docs
+                a(href='#docs')
+                  i.fa.fa-lg.fa-folder-open
+                  | Docs
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.admin
+                a(href='#admin')
+                  i.fa.fa-lg.fa-user
+                  | Admin
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.divider
+                hr
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.person-lookup
+                a(href='#personLookup')
+                  i.fa.fa-lg.fa-phone-square
+                  | Person Lookup
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.software-support
+                a(href='#softwareSupport')
+                  i.fa.fa-lg.fa-question-circle
+                  | Software Support
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.dashboard-updates
+                a(href='#dashboardUpdates')
+                  i.fa.fa-lg.fa-arrow-up
+                  | Dashboard Updates
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              li.print
+                a
+                  i.fa.fa-lg.fa-print
+                  | Print
+            | &#x9;&#x9;&#x9;&#x9;
+            ul.nav.navbar-nav.navbar-right.navbar-user
+              li.dropdown.user-dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span.js-user-name Ryan Gill
+                  b.caret
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                ul.dropdown-menu
+                  li.settings
+                    a(href='#settings')
+                      i.fa.fa-lg.fa-gear
+                      |  Settings
+        | &#x9;&#x9;
+        #page-wrapper
+          .container-fluid
+            .row
+              .col-lg-12.col-md-12.col-sm-12
+                h1.header-text.fadeInLeftBig
+            |         &#x9;&#x9;&#x9;&#x9;
+            .row
+              .col-lg-3.col-md-3.col-xs-6.js-content
+                .docs-table
+                  table(data-toggle='table', data-show-toggle='true', data-show-columns='true', data-search='true', data-striped='true')
+                    thead
+                      tr
+                        th(data-field='Name') Name
+                        |                     
+                        th(data-field='Description') Description
+                    |                 
+                    tbody
+                      tr
+                        td Remaining Tasks for this app
+                        |                     
+                        td This is a list of all the remaining tasks required to complete this app
+                      |                   
+                      tr
+                        td EVAMs presentation
+                        |                     
+                        td This is presentation for the EVAM occuring later this month
+                      |                   
+                      tr.warning
+                        td
+                          p.bg-primary asdasdasd
+                        |                     
+                        td List of all the people who will be attending the holiday party
+              | &#x9;
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              .col-lg-3.col-md-3.col-xs-6.js-content
+                .docs-table
+                  table(data-toggle='table', data-show-toggle='true', data-show-columns='true', data-search='true', data-striped='true')
+                    thead
+                      tr
+                        th(data-field='Name') Name
+                        |                     
+                        th(data-field='Description') Description
+                    |                 
+                    tbody
+                      tr
+                        td Remaining Tasks for this app
+                        |                     
+                        td This is a list of all the remaining tasks required to complete this app
+                      |                   
+                      tr
+                        td EVAMs presentation
+                        |                     
+                        td This is presentation for the EVAM occuring later this month
+                      |                   
+                      tr
+                        td Xmas Party list
+                        |                     
+                        td List of all the people who will be attending the holiday party
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .col-lg-3.col-md-3.col-xs-6.js-content
+                .docs-table
+                  table(data-toggle='table', data-show-toggle='true', data-show-columns='true', data-search='true', data-striped='true')
+                    thead
+                      tr
+                        th(data-field='Name') Name
+                        |                     
+                        th(data-field='Description') Description
+                    |                 
+                    tbody
+                      tr
+                        td Remaining Tasks for this app
+                        |                     
+                        td This is a list of all the remaining tasks required to complete this app
+                      |                   
+                      tr
+                        td EVAMs presentation
+                        |                     
+                        td This is presentation for the EVAM occuring later this month
+                      |                   
+                      tr
+                        td Xmas Party list
+                        |                     
+                        td List of all the people who will be attending the holiday party
+    |   
+    script(src='http://codepen.io/assets/libs/fullpage/jquery.js')
+    |   
+    script(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/4579/bootstrap.min.js')
+    script(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/4579/bootstrap-table.js')
+    |   
+    script(src='js/index.js')

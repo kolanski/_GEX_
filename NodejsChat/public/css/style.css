@@ -1,0 +1,197 @@
+/** Controls **/
+.controls {
+    padding: 0.5em 0.25em 0.5em 1em;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -moz-border-radius: 0;
+}
+
+.filter, .controlslayout label {
+    background: #33cccc;
+}
+
+button, .button {
+    margin-bottom: 0.5em;
+    outline: none;
+}
+
+.controls button.active, .controlslayout input[type="radio"]:checked + label {
+    background: #007295;
+}
+
+#controlslayout input[type="radio"] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+    #controlslayout input[type="radio"] + label {
+        margin: 0;
+    }
+
+.controlslayout {
+    display: block;
+}
+
+#controlslayout .fa {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+#labelgrid {
+    border-radius: 1000px 0 0 1000px;
+    padding-top: 0.5rem;
+    padding-right: .75rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1rem;
+}
+
+#labellist {
+    border-radius: 0 1000px 1000px 0;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.3rem;
+    padding-left: .75rem;
+}
+
+/** Container **/
+#Container .mix {
+    display: none;
+}
+
+#removeList {
+    position: relative;
+}
+
+    #removeList .Bets {
+        background-color: beige;
+    }
+
+#Container .large-block-grid-5 > li:nth-of-type(5n+1), #Container .large-block-grid-5 > li:nth-of-type(1n) {
+    clear: none;
+}
+
+.Bets {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -moz-border-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.Bets .row {
+    border-bottom: 1px solid green;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+    .Bets .row .button {
+        margin-top: 0.4em;
+    }
+
+input.check {
+}
+
+    input.check + label[for].check {
+        cursor: pointer;
+        position: fixed;
+        color: red;
+        padding-top: 15px;
+    }
+
+input:checked + label[for].check {
+    cursor: pointer;
+    color: green;
+    font-family: Arial;
+}
+    /* Checked */
+    input:checked + label[for].check:after {
+        color: green;
+    }
+
+    /* Hover (checked) */
+    input:checked + label[for].check:hover:after {
+        color: #6FABE7;
+    }
+.BookMaker {
+    top: 0;
+    border: none;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    -webkit-backface-visibility: hidden;
+}
+
+    .BookMaker.ol {
+        color: #ffffff;
+        background-color: #800000;
+        border-color: transparent;
+        font-weight: bold;
+    }
+
+    .BookMaker.bc {
+        color: #ffffff;
+        background-color: #006699;
+        border-color: transparent;
+        font-weight: bold;
+    }
+
+    .BookMaker.fb {
+        color: #eb8046;
+        background-color: #365670;
+        border-color: transparent;
+        font-weight: bold;
+    }
+
+    .BookMaker.bt365 {
+        color: #ffffff;
+        background-color: #14805E;
+        border-color: transparent;
+        font-weight: bold;
+    }
+
+    .BookMaker.mar {
+        color: #CB2129;
+        background-color: #86B7FF;
+        border-color: transparent;
+        font-weight: bold;
+    }
+
+    .BookMaker.par {
+        color: #231F20;
+        background-color: #FC9214;
+        border-color: transparent;
+        font-weight: bold;
+    }
+
+    .BookMaker.wil {
+        color: #FFE300;
+        background-color: #003756;
+        border-color: transparent;
+        font-weight: bold;
+    }
+
+    .BookMaker.tb {
+        color: #ffffff;
+        background-color: #1F1F1F;
+        border-color: transparent;
+        font-weight: bold;
+    }
+    .BookMaker.pin {
+        color: #FF6700;
+        background-color: #F2F2F2;
+        border-color: transparent;
+        font-weight: bold;
+    }
+    .BookMaker.winline {
+        color: #FF6700;
+        background-color: #F2F2F2;
+        border-color: transparent;
+        font-weight: bold;
+    }

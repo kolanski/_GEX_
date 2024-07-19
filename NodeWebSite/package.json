@@ -1,0 +1,10 @@
+﻿{
+  "name": "NodeWebSite",
+  "version": "0.0.1",
+  "description": "NodeWebSite",
+  "main": "app.js",
+  "author": {
+    "name": "Kolanski",
+    "email": ""
+  }
+}

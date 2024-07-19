@@ -1,0 +1,16 @@
+{
+  "name": "ProjectGambPhantom",
+  "version": "1.0.0",
+  "description": "ProjectGambPhantom",
+  "main": "server.js",
+  "author": {
+    "name": "Kolanski",
+    "email": ""
+  },
+  "dependencies": {
+    "node-slimerjs": "^1.0.1",
+    "socket.io": "latest",
+    "wait.for": "latest",
+    "weak": "latest"
+  }
+}

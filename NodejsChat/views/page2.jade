@@ -1,0 +1,150 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    |   
+    title ProjectGamb
+    |   
+    link(rel='stylesheet prefetch', href='css/foundation.css')
+    link(rel='stylesheet prefetch', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+    |     
+    link(rel='stylesheet', href='css/style.css', media='screen', type='text/css')
+  body
+    
+    nav.top-bar(data-topbar='', role='navigation')
+      ul.title-area
+        li.name
+          h1
+            a(href='#') ProjectGamb
+        // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+      section.top-bar-section
+        // Right Nav Section
+        ul.right
+          li.has-dropdown
+            a(href='#') BookMakers
+            ul.dropdown
+              li
+                p
+                  input#active1.check(type='checkbox')
+                  label.check(for='active1') Williams
+              li
+                p
+                  input#active2.check(type='checkbox')
+                  label.check(for='active2') Unibet
+              li
+                p
+                  input#active3.check(type='checkbox')
+                  label.check(for='active3') Bet365
+              li
+                p
+                  input#active4.check(type='checkbox')
+                  label.check(for='active4') Marathon
+              li
+                p
+                  input#active5.check(type='checkbox')
+                  label.check(for='active5') PariMatch
+              li
+                p
+                  input#active6.check(type='checkbox')
+                  label.check(for='active6') Fonbet
+              li
+                p
+                  input#active7.check(type='checkbox')
+                  label.check(for='active7') BetCity
+              li
+                p
+                  input#active8.check(type='checkbox')
+                  label.check(for='active8') Pinnacle
+              li
+                p
+                  input#active9.check(type='checkbox')
+                  label.check(for='active9') Olimp
+              li
+                p
+                  input#active10.check(type='checkbox')
+                  label.check(for='active10') Titanbet
+              li
+                p
+                  input#active11.check(type='checkbox')
+                  label.check(for='active11') Sportingbet
+              li
+                p
+                  input#active11.check(type='checkbox')
+                  label.check(for='active11') Sportingbet
+              
+        section.top-bar-section
+        // Right Nav Section
+        ul.right
+          li.has-dropdown
+            a(href='#') Levels of Profit
+            ul.dropdown
+              li
+                form
+                  .row
+                    .large-12.columns
+                      .row.collapse.prefix-radius
+                        .small-6.columns
+                          span.prefix Min
+                        .small-6.columns
+                          input#minval(type='text', placeholder='Value')
+                  .row
+                    .large-12.columns
+                      .row.collapse.prefix-radius
+                        .small-6.columns
+                          span.prefix Max
+                        .small-6.columns
+                          input#maxval(type='text', placeholder='Value')
+          li
+            input#soundon(type='checkbox', name='soundcheck', value='Red')
+            label(for='soundon',style='color:#78B4FF') Sound    
+        // Left Nav Section
+        ul.right
+          li
+            a(href='/table') Table
+        ul.rigth
+          li
+            label(style='color:#78B4FF') You are currently logged in as #{user.username}
+              a(href="/logout") Logout
+
+    // control buttons
+    .row
+      .small-12.columns.small-centered
+        fieldset.controls
+          .row
+            // filter buttons
+            #controlsfilter.small-8.columns
+              label Filter:
+              |           
+              button.filter.tiny.round(data-filter='all') All
+              |           
+              button.filter.tiny.round(data-filter='current') Current
+              |           
+              button.filter.tiny.round.active(data-filter='noncurrent') Non Current
+            // layout buttons
+            #controlslayout.small-4.columns
+              label Layout:
+              |           
+              .controlslayout
+                input#grid.grid(type='radio', checked='checked', name='layout')
+                label#labelgrid(for='grid')
+                  i.fa.fa-th
+                input#list.list(type='radio', name='layout')
+                label#labellist(for='list')
+                  i.fa.fa-bars
+    .row
+      .small-12.columns.small-centered
+        #Container2.container
+          ul.small-block-grid-3.medium-block-grid-4.large-block-grid-5#removeList
+    .row
+      // container for images
+      .small-12.columns.small-centered
+        #Container.container
+          ul.small-block-grid-3.medium-block-grid-4.large-block-grid-5
+    |   
+    script(src='js/jquery-2.1.3.min.js')
+    |   
+    script(src='http://cdn.foundation5.zurb.com/foundation.js')
+    script(src='js/jquery.cookie.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='js/index.js')

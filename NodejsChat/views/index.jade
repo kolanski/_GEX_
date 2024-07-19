@@ -1,0 +1,8 @@
+﻿if (!user)
+  a(href="/login") Login
+  br
+  a(href="/register") Register
+if (user)
+  p You are currently logged in as #{user.username}
+  a(href="/fork") Navigate to program
+  a(href="/logout") Logout
